@@ -1,0 +1,9 @@
+<h1>Hi, Sky!</h1>
+<br>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="name" value="Your name"/><br><br>
+    <input type="email" name="email" value="Your email" /><br><br>
+    <textarea name="message">Your text</textarea><br><br>
+    <input type="submit" value="Send">
+</form>
