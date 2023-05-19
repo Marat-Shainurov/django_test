@@ -1,9 +1,38 @@
-<h1>Hi, Sky!</h1>
-<br>
-<form method="post">
-    {% csrf_token %}
-    <input type="text" name="name" value="Your name"/><br><br>
-    <input type="email" name="email" value="Your email" /><br><br>
-    <textarea name="message">Your text</textarea><br><br>
-    <input type="submit" value="Send">
-</form>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/uikit.min.css"/>
+    <link rel="stylesheet" href="static/uikit.css"/>
+    <link rel="stylesheet" href="static/uikit-icons.min.css"/>
+    <link rel="stylesheet" href="static/uikit-rtl.css"/>
+    <link rel="stylesheet" href="static/uikit-rtl.min.css"/>
+    <script src="static/uikit.min.js"></script>
+    <script src="static/uikit-icons.js"></script>
+    <script src="static/uikit-icons.min.js"></script>
+</head>
+<body>
+<ul uk-accordion>
+    <li class="uk-open">
+        <a class="uk-accordion-title" href="#">Item 1</a>
+        <div class="uk-accordion-content">
+            <p>Content 1</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 2</a>
+        <div class="uk-accordion-content">
+            <p>Content 2</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">Item 3</a>
+        <div class="uk-accordion-content">
+            <p>Content 2</p>
+        </div>
+    </li>
+</ul>
+</body>
+</html>
+
